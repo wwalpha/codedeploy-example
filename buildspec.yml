@@ -7,9 +7,9 @@ phases:
   build:
     commands:
       - mvn install
+      - cp target/codedeploy.war .
 artifacts:
   files:
-    - target/codedeploy.war
+    - codedeploy.war
     - appspec.yml
-    - scripts
-  discard-paths: yes
+    - scripts/*
