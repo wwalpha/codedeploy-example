@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: demo.war
-    destination: /usr/share/tomcat/webapps/demo.war
+    destination: /usr/share/tomcat/webapps
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
@@ -21,7 +21,7 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
-  ValidateService:
-    - location: scripts/validate
-      timeout: 300
-      runas: root
+  # ValidateService:
+  #   - location: scripts/validate
+  #     timeout: 300
+  #     runas: root
