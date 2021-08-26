@@ -7,9 +7,9 @@ phases:
   build:
     commands:
       - mvn install
-      - cp target/codedeploy.war .
+      - cp target/codedeploy.war demo.war
 artifacts:
   files:
-    - codedeploy.war
+    - demo.war
     - appspec.yml
     - scripts/*
