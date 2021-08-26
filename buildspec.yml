@@ -6,9 +6,9 @@ phases:
       java: openjdk11
   build:
     commands:
-      - mvn package
+      - mvn install
 artifacts:
   files:
-    - target/codedeploy-1.0.0.jar
+    - target/codedeploy.jar
     - appspec.yml
   discard-paths: yes
