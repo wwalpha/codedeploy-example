@@ -7,10 +7,9 @@ phases:
   build:
     commands:
       - mvn install
-      - ls
-      - ls target
 artifacts:
   files:
     - target/codedeploy.war
     - appspec.yml
+    - scripts
   discard-paths: yes
