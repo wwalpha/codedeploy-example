@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - mvn package
+artifacts:
+  files:
+    - target/codedeploy-1.0.0.jar
+    - appspec.yml
+  discard-paths: yes
