@@ -9,7 +9,7 @@ public class Counter {
 	}
 
 	public long next() {
-		this.value = this.value + 1;
+		this.value = this.value + 2;
 		return this.value;
 	}
 }
