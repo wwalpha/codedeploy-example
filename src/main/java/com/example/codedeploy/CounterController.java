@@ -9,7 +9,7 @@ public class CounterController {
 	private final Counter counter = new Counter();
 
 	@GetMapping("/count")
-	public long greeting() {
+	public long counting() {
 		return counter.next();
 	}
 }
